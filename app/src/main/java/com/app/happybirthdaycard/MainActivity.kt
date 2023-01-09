@@ -30,8 +30,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     BirthdayGreetingWithImage(
-                        message = "Happy Birthday, John!",
-                        from = "- from Emma"
+                        message = stringResource(id = R.string.happy_birthday_text),
+                        from = stringResource(id = R.string.signature_text)
                     )
                 }
             }
@@ -83,7 +83,7 @@ fun BirthdayGreetingWithImagePreview() {
     HappyBirthdayCardTheme {
         BirthdayGreetingWithImage(
             message = stringResource(R.string.happy_birthday_text),
-            from = "- from Emma"
+            from = stringResource(id = R.string.signature_text)
         )
     }
 }
